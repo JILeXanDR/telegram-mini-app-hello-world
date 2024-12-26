@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World Mini App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is a simple Telegram Mini App.</p>
+    <script>
+        // ініціалізувати Telegram Web App
+        const tg = window.Telegram.WebApp;
+        console.log('tg', tg);
+        tg.expand(); // розширити на весь екран
+        console.log(tg.initDataUnsafe);
+    </script>
+</body>
+
+</html>
